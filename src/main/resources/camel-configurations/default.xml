@@ -7,7 +7,7 @@
 
     <c:camelContext>
         <c:route>
-            <c:description>MQTT Process</c:description>
+            <c:description>Human Device Message Process</c:description>
             <c:from uri="paho:{{mqtt.topic.human-sensor}}?brokerUrl={{mqtt.host}}"/>
             <c:process ref="humanDeviceProcessor"/>
         </c:route>
