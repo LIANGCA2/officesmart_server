@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: dev
+  jackson:
+    time-zone: GMT+8
+  main:
+    sources:
+      - camel-configurations/default.xml
+camel:
+  springboot:
+    main-run-controller: true
+server:
+  servlet:
+    context-path: /api
+mqtt:
+  host: tcp://127.0.0.1:11883
+  topic:
+    human-sensor: human-sensor
